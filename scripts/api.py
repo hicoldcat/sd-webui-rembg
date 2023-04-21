@@ -64,6 +64,6 @@ def rembg_api(_: gr.Blocks, app: FastAPI):
 
 try:
     import modules.script_callbacks as script_callbacks
-    script_callbacks.on_app_started(rmbg_api)
+    script_callbacks.on_app_started(rembg_api)
 except:
     print("Remove BG API failed to initialize")
