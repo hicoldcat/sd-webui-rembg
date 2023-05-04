@@ -33,7 +33,7 @@ def rembg_api(_: gr.Blocks, app: FastAPI):
 
     def pil_image_to_base64(img: Image.Image) -> str:
         buffered = BytesIO()
-        img.save(buffered, format="JPEG")
+        img.save(buffered, format="PNG")
         img_base64 = base64.b64encode(buffered.getvalue()).decode()
         return img_base64
 
